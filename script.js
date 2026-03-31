@@ -1,14 +1,14 @@
 
-const API_KEY = "60a385fa-7b90-4ab6-bf04-6c7c63a420ba";
+const MyAPI = "60a385fa-7b90-4ab6-bf04-6c7c63a420ba";
 
-const BASE_URL = "https://api.harvardartmuseums.org/object";
+const BaseURL = "https://api.harvardartmuseums.org/object";
 
 async function fetchArt() {
   showLoading();
 
   try {
     const response = await fetch(
-      `${BASE_URL}?apikey=${API_KEY}&size=12`
+      `${BaseURL}?apikey=${MyAPI}&size=12`
     );
 
     const data = await response.json();
@@ -17,7 +17,7 @@ async function fetchArt() {
 
   } catch (error) {
     document.getElementById("gallery").innerHTML =
-      "<p>Error loading artworks. Please try again.</p>";
+      "<p>Error loading artworks. Please try again :)</p>";
   }
 }
 
