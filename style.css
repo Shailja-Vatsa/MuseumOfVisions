@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,700;1,700&display=swap');
 
 :root {
-  /* Dark Theme (Default) */
+  
   --bg-color: #0a0a0c;
   --surface-color: rgba(255, 255, 255, 0.03);
   --border-color: rgba(255, 255, 255, 0.1);
@@ -57,7 +57,7 @@ h1 {
   letter-spacing: -0.02em;
 }
 
-/* Controls Section */
+
 .controls-container {
   max-width: 1200px;
   margin: 0 auto 3rem;
@@ -101,7 +101,7 @@ input:focus, select:focus {
   box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.2);
 }
 
-/* Gallery Grid */
+
 #gallery {
   max-width: 1200px;
   margin: 0 auto;
@@ -110,7 +110,7 @@ input:focus, select:focus {
   gap: 2rem;
 }
 
-/* Artwork Cards */
+
 .card {
   background: var(--surface-color);
   border: 1px solid var(--border-color);
@@ -161,7 +161,6 @@ input:focus, select:focus {
   margin-top: 1rem;
 }
 
-/* Action Buttons */
 .btn-fav {
   background: none;
   border: none;
@@ -195,7 +194,6 @@ input:focus, select:focus {
   background: var(--accent-hover);
 }
 
-/* Loading & Empty States */
 .loading-indicator {
   grid-column: 1 / -1;
   text-align: center;
