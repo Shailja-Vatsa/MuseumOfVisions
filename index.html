@@ -1,15 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>MuseumOfVisions</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MuseumOfVisions - Explore a digital gallery of high-art with advanced filtering and search.">
+    <title>MuseumOfVisions | Digital Art Explorer</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body data-theme="dark">
 
-  <h1>Museum Of Visions</h1>
+    <header>
+        <h1>MuseumOfVisions</h1>
+        <button id="themeToggle" class="theme-toggle">Light Mode</button>
+    </header>
 
-  <div id="gallery"></div>
+    <main>
+        <section class="controls-container">
+            <!-- Search -->
+            <div class="control-group">
+                <label for="searchInput">Search Artworks</label>
+                <input type="text" id="searchInput" placeholder="Title, artist, or date...">
+            </div>
 
-  <script src="script.js"></script>
+            <!-- Classification Filter -->
+            <div class="control-group">
+                <label for="classificationFilter">Classification</label>
+                <select id="classificationFilter">
+                    <option value="all">All Classifications</option>
+                    <option value="Paintings">Paintings</option>
+                    <option value="Drawings">Drawings</option>
+                    <option value="Prints">Prints</option>
+                    <option value="Photographs">Photographs</option>
+                    <option value="Sculpture">Sculpture</option>
+                </select>
+            </div>
+
+            <!-- Sorting -->
+            <div class="control-group">
+                <label for="sortOrder">Sort By</label>
+                <select id="sortOrder">
+                    <option value="title-asc">Title (A-Z)</option>
+                    <option value="title-desc">Title (Z-A)</option>
+                    <option value="date-new">Date (Newest)</option>
+                    <option value="date-old">Date (Oldest)</option>
+                </select>
+            </div>
+        </section>
+
+        <section id="gallery">
+            <div class="loading-indicator">Curating exhibition...</div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
